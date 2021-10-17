@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "C:\Users\miwan\Desktop\Git\C-Projects\CS 50\CS50 Header Files\cs50.h"
 
+//this is an example of floating point imprecision
 
 int main (void)
 {
