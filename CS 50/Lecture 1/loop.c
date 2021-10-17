@@ -3,6 +3,7 @@
 
 //prototype tells compiler that a function exists
 void meow(void);  
+void meow_v2(int n); 
 
 int main (void)
 {
