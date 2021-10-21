@@ -3,7 +3,7 @@
 
 const int TOTAL = 3;
 
-float average(int length, int array[])
+float average(int length, int array[]);
 
 int main(void)
 { 
