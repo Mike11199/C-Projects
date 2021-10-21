@@ -10,7 +10,7 @@ int main2(void)
 
 int main3(void)
 {
-    char c1 = 'H';      //single quotes for single characters, double for strings
+    char c1 = 'H';      //Single quotes for single characters, double for strings
     char c2 = 'I';
     char c3 = '!';
     printf("%i %i %i\n", c1,c2,c3);   
@@ -19,6 +19,9 @@ int main3(void)
 int main(void)
 {
     string s = "HI!";
-    printf("%s\n", s);   //a string is an ARRAY of char characters; we can access individual characters with square brackets []
+    printf("%s\n", s);   //A string is an ARRAY of char characters; we can access individual characters with square brackets []; uses fourth byte null character that represents
+                        // the end of the string.  
+    printf("%i %i %i %i %i\n", s[0],s[1],s[2], s[3],s[40]);  //fifth s[40] access memory outside the string
 }
+
 
