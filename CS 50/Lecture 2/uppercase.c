@@ -26,7 +26,7 @@ int main_toupper_function(void)
     string s =get_string("Before: ");
     printf("After: ");
     for (int i = 0, n = strlen(s); i < n; i++)              //This uses the toupper() function from ctype.h header file to convert to uppercase.  It is smart enough 
-{                                                           //that it doesn't need to first check if a char is lowercase.  Needs to be passed a char not a string.
+    {                                                           //that it doesn't need to first check if a char is lowercase.  Needs to be passed a char not a string.
         printf("%c", toupper(s[i]));
     }
     printf("\n");
