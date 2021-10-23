@@ -10,7 +10,7 @@ typedef struct
 }
 person;
 
-//Phonebook with a datas structure called person
+//Phonebook with a data structure called person
 int main (void)
 {
     person people[2];
@@ -36,7 +36,7 @@ int main (void)
 
 
 
-//Implemntation of a phone book with two parallel arrays
+//Implemntation of a phone book with two parallel arrays (bad design as order has to be perfect)
 int main_wrong_way (void)
 {
     string names[] = {"Brian", "David"};
