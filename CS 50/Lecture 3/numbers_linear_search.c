@@ -2,6 +2,8 @@
 #include "C:\Users\miwan\Desktop\Git\C-Projects\CS 50\CS50 Header Files\cs50.h"
 
 
+//Binary search is fastest but requires sorted data (cutting phonebook in half example)
+
 //Implementation of linear search algorithm
 int main (void)
 {
