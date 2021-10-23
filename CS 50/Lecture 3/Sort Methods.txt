@@ -1,0 +1,122 @@
+Big O Notation:  	O stands for order; the upper bound of asymptotic complexity.
+Ω: 		 	Omega or lower bound.
+θ:			Theta.  When upper bound and lower bound are the same.
+
+
+
+Linear Search:  
+
+		Upper Bound - O(n) 
+		Lower Bound - Ω(1)
+
+
+
+
+
+Binary Search  (Divides in half):  
+
+		Upper Bound - O(log n)
+		Lower Bound - Ω(1)
+
+
+			Pick up phone book
+			Open to middle of phone book
+			Look at page
+			If person is on page
+				Call person
+			Else if person is earlier in book
+				Open to middle of left half of book
+				Go back to line 3
+			Else if person is later in book	
+				Open to middle of right half of book
+				Go back to line 3
+			Else
+				Quit
+
+
+
+
+
+Selection Sort: 
+
+		Upper Bound - O(n^2)
+		Lower Bound - Ω(n^2)
+			or
+			    - θ(n^2)
+	
+	
+	
+			For i from 0 to n-1
+				Find smallest item between i'th item and the last item
+				Swap smallest item with the i'th item
+
+
+
+
+
+Bubble Sort:
+
+		
+		Upper Bound -  O(n^2) 
+		Lower Bound - Ω(n)
+	
+
+			Repeat until sorted
+				For i from 0 to n-2
+					If i'th and the i+1'th element out of order
+					Swap them
+				If no swaps
+					Quit
+
+
+
+
+
+Recursion:
+	
+	-The ability for a function to call itself.  Uses different input each time or else output
+	would be exactly the same.  Change input to be smaller each time.  
+
+
+		Upper Bound - 
+		Lower Bound - 
+
+
+
+			Pick up phone book
+			Open to middle of phone book
+			Look at page
+			If person is on page
+				Call person
+			Else if person is earlier in book
+				Search left half of book
+			Else if person is later in book	
+				Search right half of book
+			Else
+				Quit
+
+
+
+
+
+
+Merge Sort:
+
+
+		Upper Bound - O(n log n)
+		Lower Bound - Ω(n log n)
+			or
+			    - θ(n^2)
+
+
+
+			If only one number
+				Quit
+			Else
+				Sort left half of numbers
+				Sort right half of numbers
+				Merge the sorted havles
+
+
+
+
