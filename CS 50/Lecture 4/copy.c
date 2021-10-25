@@ -1,25 +1,28 @@
 #include <stdio.h>
 #include "C:\Users\miwan\Desktop\Git\C-Projects\CS 50\CS50 Header Files\cs50.h"
 #include <string.h>
+#include <ctype.h>
+#include <stdlib.h>                                    //access to malloc
 
 
 int main (void)
 {
     char *s = get_string("s: ");
-    char *t = get_string("t: ");
-
-    printf("%p\n", s);
-    printf("%p\n", t);
+   
+    char *t = malloc(strlen(s)+1);                      //malloc stands for memory allocation.  takes input as number for how many bytes of memory to create
 
 
-    if (strcmp(s,t) == 0)
-    {
-        printf("Same\n");
-    }
-    else
-    {
-        printf("Different\n");
-    }
+    for (int i = 0, n = strlen(s); i <= n; i++)
+        {
+            t[i] = s[i];
+        }
+        t[0] = toupper(t[0]);
+
+
+
+    printf("s: %s\n", s);
+    printf("t: %s\n", t);
+
 
 }
 
