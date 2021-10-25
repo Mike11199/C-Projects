@@ -20,8 +20,9 @@ int main (void)
  
 void swap (int *a, int *b)                         //pointers as arguments
 {
-        int tmp = *a;                             //tmp = integer "empty glass"
+        int tmp = *a;                              //tmp = integer "empty glass"
         *a = *b;
-        *b = tmp;
+        *b = tmp;                                  //stack overfl0w = calling a fucntion so many times that it overflows the heap.  stack on bottom, heap on top.
 }
+
 
