@@ -1,28 +1,24 @@
 #include <stdio.h>
-#include "C:\Users\miwan\Desktop\Git\C-Projects\CS 50\CS50 Header Files\cs50.h"
-#include <string.h>
-#include <ctype.h>
-#include <stdlib.h>                               //access to malloc
 
- 
-void swap (int *a, int *b);                       //prototype
 
-int main (void)
+int main (void)                         //custom get string from user like in cs50 library
 {
-        int x = 1;
-        int y = 2;
-
-        printf("x is %i, y is %i\n", x, y);
-        swap(&x, &y);                             //pass the address of x and y
-        printf("x is %i, y is %i\n", x, y);
-}
-
- 
-void swap (int *a, int *b)                         //pointers as arguments
-{
-        int tmp = *a;                              //tmp = integer "empty glass"
-        *a = *b;
-        *b = tmp;                                  //stack overfl0w = calling a fucntion so many times that it overflows the heap.  stack on bottom, heap on top.
+        char s[4];                      //or use malloc and free
+        printf("s: ");
+        scanf("%s", s);                //don't need to do &s because s is fundamentally an address
+        printf("s: %s\n", s);
 }
 
 
+
+
+int main_int (void)                         //custom get integer from user like in cs50 library
+{
+        int x;
+        printf("x: ");
+        scanf("%i", &x);
+        printf("x: %i\n", x);
+
+}
+
+ 
