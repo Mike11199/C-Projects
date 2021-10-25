@@ -4,25 +4,28 @@
 #include <ctype.h>
 #include <stdlib.h>                               //access to malloc
 
- 
-void swap (int *a, int *b);                       //prototype
+
+void draw (int h);
 
 int main (void)
 {
-        int x = 1;
-        int y = 2;
+        int height = get_int("Height: ");
+        draw(height);
 
-        printf("x is %i, y is %i\n", x, y);
-        swap(&x, &y);                             //pass the address of x and y
-        printf("x is %i, y is %i\n", x, y);
+
 }
 
- 
-void swap (int *a, int *b)                         //pointers as arguments
+
+void draw (int h)
 {
-        int tmp = *a;                              //tmp = integer "empty glass"
-        *a = *b;
-        *b = tmp;                                  //stack overfl0w = calling a fucntion so many times that it overflows the heap.  stack on bottom, heap on top.
+        for (int i = 1; i <= h; i++)
+        {
+                for (int j = 1; j <= i; j++)
+                {
+                        printf("#");
+                }     
+                printf("\n");
+        }
+     
 }
-
 
