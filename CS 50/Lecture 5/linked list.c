@@ -49,11 +49,20 @@ int main (void)
     list->next->next = n;
 
 
+    //loop to print list
     for (node *tmp = list; tmp != NULL; tmp = tmp->next)
     {
         printf("%i\n", tmp ->number);
     }
 
+
+    //have to free memory from last to first in chain
+    while (list != NULL)
+    {
+        node *tmp = list->next;     //list represents the first node in the linked list not the whole thing
+        free(list);
+        list = tmp;
+    }
 
 
 
