@@ -1,6 +1,4 @@
-import cs50
-
-words=set()
+words = set
 
 
 def check(word):
