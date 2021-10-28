@@ -1,0 +1,11 @@
+from cs50 import get_string
+
+s = get_string("Do you agree? ")
+
+#double quotes not single quotes like C; using a list
+if s.lower() in ["y", "yes"]:
+        print("Agreed.")
+elif s.lower() in ["n", "no"]:
+        print("Not Agreed.")
+
+
