@@ -10,7 +10,14 @@ int main (void)
     printf("%c\n", *(s+1));
     printf("%c\n", *(s+2));
     printf("%i\n", *(s+3));
+
+    for (int i=0; i<3; i++)
+    {
+        printf("%s\n", s);
+    }
+
 }
+
 
 
 int main_previous (void)
