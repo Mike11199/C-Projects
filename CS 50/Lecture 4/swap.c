@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "C:\Users\miwan\Desktop\Git\C-Projects\CS 50\CS50 Header Files\cs50.h"
+#include <cs50.h>
+#include <cs50.c>
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>                               //access to malloc
@@ -22,7 +23,7 @@ void swap (int *a, int *b)                         //pointers as arguments
 {
         int tmp = *a;                              //tmp = integer "empty glass"
         *a = *b;
-        *b = tmp;                                  //stack overfl0w = calling a fucntion so many times that it overflows the heap.  stack on bottom, heap on top.
-}
+        *b = tmp;                                  // stack overflow = calling a function so many times that it overflows the heap. 
+}                                                  // stack on bottom, heap on top.
 
 

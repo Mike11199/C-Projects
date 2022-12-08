@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include "C:\Users\miwan\Desktop\Git\C-Projects\CS 50\CS50 Header Files\cs50.h"
+#include <cs50.h>
+#include <cs50.c>
 #include <string.h>
 
-//Implemntation of a data structure to store name and phone #.  Can use the '.' or dot operator to go inside the data structure and access its methods.
+//Implementation of a data structure to store name and phone #.  Can use the '.' or dot operator to go inside the data structure and access its methods.
 typedef struct 
 {
     string name;
